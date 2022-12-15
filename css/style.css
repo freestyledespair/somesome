@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.header_top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.header_top h1 {
+    color: #0088A2;
+    font-weight: 400;
+    font-size: 60px;
+    margin-left: 100px;
+    font-family: 'Josefin Sans';
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #808080;
+    margin-bottom: 40px;
+}
+
+.menu li {
+    flex: 0 1 20%;
+    text-align: center;
+    list-style: none;
+}
+
+.menu_item {
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    transition: 0.6s;
+}
+
+.menu_item:hover {
+    background-color: #0088A2;
+}
+
+.question_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.question {
+    flex: 0 1 30%;
+    position: relative;
+}
+
+.question img {
+    width: 100%;
+}
+
+.question p {
+    position: absolute;
+    top: 110px;
+    left: 30%;
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    font-family: Open Sans;
+}
+
+h2 {
+    color: #0088A2;
+    font-size: 50px;
+    text-align: center;
+    font-family: Open Sans;
+    font-weight: 400;
+}
+
+.appimages {
+    position: relative;
+}
+
+.appimages img {
+    width: 100%;
+}
+
+#buttonimg {
+    position: absolute;
+    top: 39%;
+    left: 43%;
+    width: 13%;
+}
+
+.container_block {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    margin: 0px 0px 480px;
+}
+
+.img_block {
+    margin: 100px 0;
+    position: relative;
+}
+
+.img_block img {
+    width: 240px;
+    height: 450px;
+}
+
+#img5 {
+    position: absolute;
+    left: 278px;
+    z-index: 5;
+}
+
+#img4 {
+    position: absolute;
+    left: 90px;
+    top: 25px;
+    z-index: 4;
+}
+
+#img3 {
+    position: absolute;
+    left: -88px;
+    z-index: 3;
+}
+
+#img2 {
+    position: absolute;
+    top: 30px;
+    right: 55px;
+    z-index: 2;
+}
+
+#img1 {
+    position: absolute;
+    right: 240px;
+    z-index: 1;
+}
+
+
+.textpmain {
+    color: #707070;
+    font-family: Roboto;
+    /*не выходит чето */
+    font-size: 28px;
+    text-align: center;
+    margin: 70px auto;
+    width: 1200px;
+}
+
+.downloadimages {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h3 {
+    font-family: Josefin Sans;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 90px;
+    margin: 50px 0px 40px;
+    padding: 50px 0px 0px;
+}
+
+.footerfooter {
+    background-color: #0088A2;
+    text-align: center;
+}
+
+.footerimgs {
+    padding: 0 35px;
+}
+
+.containercontacts {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.containercontacts div {
+    flex: 0 1 30%;
+}
+
+h4 {
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Open Sans';
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Open Sans';
+}
+
+
+#kontakty {
+    width: 65%;
+    margin: 0 auto;
+}
+
+#adresa {
+    width: 67%;
+    margin: 0 auto;
+}
+
+#pomosh {
+    width: 35%;
+    margin: 0 auto;
+}
+
+
+
+
+/********************************
+************ BURGER *************
+********************************/
+
+.btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.btn span,
+.btn span::before,
+.btn span::after {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: black;
+    transition: 0.5s;
+}
+
+.btn span::before {
+    content: '';
+    top: -8px;
+}
+
+.btn span::after {
+    content: '';
+    top: 8px;
+}
+
+.bu_menu {
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 25%;
+    list-style: none;
+    text-align: center;
+    background-color: blueviolet;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.64);
+    transition: 0.4s;
+    z-index: 3;
+}
+
+.menu__item {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(255, 0, 195);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+    text-decoration: underline;
+}
+
+.menu__item:hover {
+    background-color: burlywood;
+}
+
+#toggle:checked~.btn span {
+    transform: rotate(45deg);
+}
+
+#toggle:checked~.btn span::before {
+    transform: rotate(-90deg);
+    top: 0;
+}
+
+#toggle:checked~.btn span::after {
+    transform: rotate(0deg);
+    top: 0;
+}
+
+
+#toggle:checked~.bu_menu {
+    left: 0;
+    visibility: visible;
+}
